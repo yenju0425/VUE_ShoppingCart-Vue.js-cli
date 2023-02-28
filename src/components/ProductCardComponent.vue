@@ -4,7 +4,8 @@
       {{ product.name }}
     </div>
     <div class="card-body">
-      <i class="icofont-10x icofont-{{ product.icon }}"></i>
+      <!-- v-bind the icon to the icofont class -->
+      <i :class="iconClass"></i>
       <form>
         <div class="row">
           <div class="cell">
@@ -52,6 +53,11 @@ export default {
   data () {
     return {
       quantity: 0
+    }
+  },
+  computed: {
+    iconClass () {
+      return `icofont-${this.product.icon} icofont-3x`
     }
   }
 }
