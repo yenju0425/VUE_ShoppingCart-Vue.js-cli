@@ -1,4 +1,4 @@
-# Vue Shopping Cart App (Part II: Vue.js application development)
+# Vue Shopping Cart App (Part II: Vue.js cli)
 
 Welcome to the Vue Shopping Cart App - Part II. This project is a continuation of Part I and is also from the YouTube tutorial. I have added my own comments and completed all the tasks left off by the original author.
 
