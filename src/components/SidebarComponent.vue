@@ -24,14 +24,14 @@
           </thead>
           <tbody>
             <!-- Use the v-for directive to loop through the cart object -->
-            <tr v-for="(quantity, product_index, i) in cart" :key="i">
-              <td class="center"><i class="icofont-{{ inventory[product_index].icon }} icofont-3x"></i></td>
-              <td class="center">{{ inventory[product_index].name }}</td>
-              <td class="center">${{ inventory[product_index].price.USD }}</td>
+            <tr v-for="(quantity, productIndex, i) in cart" :key="i">
+              <td class="center"><i :class="iconClass(productIndex)"></i></td>
+              <td class="center">{{ inventory[productIndex].name }}</td>
+              <td class="center">${{ inventory[productIndex].price.USD }}</td>
               <td class="center">{{ quantity }}</td>
-              <td class="center">${{ (inventory[product_index].price.USD * quantity).toFixed(2) }}</td>
+              <td class="center">${{ (inventory[productIndex].price.USD * quantity).toFixed(2) }}</td>
               <td class="center">
-                <button @click="remove(product_index)" class="btn btn-light cart-remove">
+                <button @click="remove(productIndex)" class="btn btn-light cart-remove">
                   &times;
                 </button>
               </td>
@@ -61,6 +61,12 @@ export default {
       return Object.keys(this.cart).reduce((total, key) => {
         return total + this.inventory[key].price.USD * this.cart[key]
       }, 0).toFixed(2)
+    }
+  },
+  methods: {
+    iconClass (productIndex) {
+      console.log(this.inventory[productIndex].icon)
+      return `icofont-${this.inventory[productIndex].icon} icofont-2x`
     }
   }
 }

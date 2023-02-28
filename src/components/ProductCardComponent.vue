@@ -36,7 +36,7 @@
     </div>
     <div class="card-footer">
       <!-- Use the addToCart method to add the item to the cart -->
-      <button @click="addToCart(index, quantity)" class="btn btn-light">
+      <button @click="addAndReset()" class="btn btn-light">
         Add to cart
       </button>
     </div>
@@ -53,6 +53,18 @@ export default {
   data () {
     return {
       quantity: 0
+    }
+  },
+  methods: {
+    resetQuantity () {
+      this.quantity = 0
+    },
+    addAndReset () {
+      // add the item to the cart
+      this.addToCart(this.index, this.quantity)
+
+      // reset the quantity to 0
+      this.resetQuantity()
     }
   },
   computed: {

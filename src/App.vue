@@ -1,26 +1,33 @@
+<!-- App.vue can view as the main component of the application. It handles what pages are shown and what components are shown on each page. -->
+
 <template>
   <header class="top-bar spread">
     <nav class="top-bar-nav">
+      <!-- The Home page -->
       <router-link to="/" class="top-bar-link">
         <i class="icofont-spoon-and-fork"></i>
         <span>Home</span>
       </router-link>
+
+      <!-- The Products page -->
       <router-link to="/products" class="top-bar-link">
         <span>Products</span>
       </router-link>
+
+      <!-- The Past Orders page -->
       <router-link to="/past-orders" class="top-bar-link">
         <span>Past Orders</span>
       </router-link>
     </nav>
 
-    <!-- When the user clicks the cart icon, toggle the sidebar -->
+    <!-- The Cart page -->
     <div @click="toggleSidebar" class="top-bar-cart-link">
       <i class="icofont-cart-alt icofont-1x"></i>
       <span>Cart ({{ totalQuantity }})</span>
     </div>
-
   </header>
 
+  <!-- The router-view component is where the pages are shown -->
   <router-view :inventory="inventory" :addToCart="addToCart" />
 
   <Sidebar

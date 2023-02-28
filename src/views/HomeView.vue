@@ -6,7 +6,7 @@
       </div>
     </div>
     <main class="wrapper">
-      <h2>Recommended</h2>
+      <h1>Recommended</h1>
       <!-- Only show the first 3 items to be recommended -->
       <div class="recommended">
         <!-- Use the v-for directive to loop through the inventory object -->
