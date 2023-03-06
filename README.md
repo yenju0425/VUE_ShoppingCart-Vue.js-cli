@@ -1,6 +1,6 @@
 # Vue Shopping Cart App (Part II: Vue.js cli)
 
-Welcome to the Vue Shopping Cart App - Part II. This project is a continuation of Part I and is also from the YouTube tutorial. I have added my own comments and completed all the tasks left off by the original author.
+Welcome to the Vue Shopping Cart App - Part II. This project is a continuation of [Part I](https://github.com/yenju0425/VUE_ShoppingCart-Vue.js-integration#vue-shopping-cart-app-part-i-vuejs-as-a-plugin) and is also from the YouTube tutorial. I have added my own comments and completed all the tasks left off by the original author.
 
 By working through this project, you will be able to:
 
@@ -26,7 +26,7 @@ Here are some video demonstrations of the Shopping Cart app:
 
 # Hints
 
-- I strongly recommend you to finish Part I of the project before you start this project.
+- I strongly recommend you to finish [Part I](https://github.com/yenju0425/VUE_ShoppingCart-Vue.js-integration#vue-shopping-cart-app-part-i-vuejs-as-a-plugin) of the project before you start this project.
 - My comments in the code provide detailed information about the project in the video, which might be useful for beginners learning Vue.js for the first time.
 - Follow the Git commits to see how the app is built step by step.
 - If you have any questions or feedback, feel free to reach out to me. I would be happy to help you.
