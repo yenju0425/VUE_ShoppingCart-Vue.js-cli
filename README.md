@@ -8,7 +8,7 @@ By working through this project, you will be able to:
 - Learn the difference between `Vue.js` and `Vue CLI`.
 - Learn the concept of Single page application.
 
-## References
+# References
 
 Here are some resources that will be useful as you work on the Shopping Cart app:
 
@@ -17,7 +17,14 @@ Here are some resources that will be useful as you work on the Shopping Cart app
 - 📚 Useful Tutorial:
     - [Vue.js Course for Beginners](https://www.youtube.com/watch?v=FXpIoQ_rT_c&t=8780s)
 
-## Hints
+# Demonstrations
+
+Here are some video demonstrations of the Shopping Cart app:
+
+* [Overview](https://drive.google.com/file/d/1cOXCZn9deXOXbUoU8me3zMtrOSNGQAHt/view?usp=share_link)
+* [Functionalities](https://drive.google.com/file/d/145r6rN33buWOudFVlE6WoFZkPcQjQ0ly/view?usp=share_link)
+
+# Hints
 
 - I strongly recommend you to finish Part I of the project before you start this project.
 - My comments in the code provide detailed information about the project in the video, which might be useful for beginners learning Vue.js for the first time.
